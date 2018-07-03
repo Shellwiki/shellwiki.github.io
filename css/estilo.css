@@ -10,8 +10,7 @@ Se for utilizar mantenha os créditos.
 
 
 body{margin: 0 auto; font-family: IBMPlexSerif-Light;}
-.logo{width: 11%;}
-.cima{background-color: #e8e8e8; margin: 0;}
+.logo{width: 11%; margin-left: 45%;}
 #Principal{margin: 8%;}
 p{font-size: 1.2em; font-family: IBMPlexSerif-Light;}
 
@@ -31,10 +30,12 @@ a:visited{color: #333;}
 
 
 /*-----------MENU */
+
 #menu ul {
+    text-align: center;
     padding:0px;
     margin:0px;
-    background-color:#EDEDED;
+
     list-style:none;
 }
 
@@ -57,3 +58,7 @@ a:visited{color: #333;}
     color: #6D6D6D;
     border-bottom:3px solid #EA0000;
 }
+
+
+
+
