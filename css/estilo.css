@@ -22,9 +22,9 @@ h1{color: #343c4f; font-size: 2.1em;}
 li{color: #343c4f; }
 
 /*-------LINKS Principais */
-a:link{text-decoration: none; color: #333;}
-a:hover{color: #343c4f;}
-a:visited{color: #333;}
+a:link{text-decoration: none; color: #1a0dab;}
+a:hover{background-color: #dfdfdf;}
+a:visited{color: #1a0dab;}
 
 
 
