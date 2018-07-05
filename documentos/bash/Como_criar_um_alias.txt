@@ -1,0 +1,86 @@
+------------------------------------------------------------------------------
+#_ SHELLWIKI         |          A Wiki em Plain Text
+------------------------------------------------------------------------------
+
+Autor:     Jefferson Rocha
+Email:     lrcjefferson@gmail.com
+Categoria: Bash
+Criado em: 05/07/2018
+
+------------------------------------------------------------------------------
+
+Como criar um alias.
+
+Ao final deste HOWTO você será capaz de entender o conceito do alias e criar
+os seus próprios
+
+indice()
+{
+   1.    O que é um alias?
+   1.1   Criando nosso primeiro alias
+   1.2   Deixando nosso alias salvo   
+}
+
+
+1. O que é um alias?
+-------------------
+
+Um alias é um nick/apelido que damos para um determinado comando, assim fica
+mais fácil fazer a chamada do mesmo. Imagine você com um comando imenso e 
+precisa digitar aquela ripa todos os dias, isso é inviável e dá até preguiça
+de pensar.
+
+
+1.1 Criando nosso primeiro alias
+--------------------------------
+Para criar nosso primeiro alias, vamos usar o comando ls que serve para listar
+um diretório. Note que se você rodar o comando puramente ele não tem muita fi-
+rula. E que tal adicionarmos uma firulinha nele? vamos deixar a nossa saída
+colorida e para isto usamos o parâmetro --color
+
+$ ls --color
+
+Note que a saída agora não saiu crua e sim colorida, mas não achei viável está
+parte, poxa rodar sempre ls --color vai doer meus dedos no final do dia. Então
+que tal criar um nick para ele? para isso o alias é invocado!
+Sua sintaxe é bem simples e não tem muito misterio.
+
+alias ComandoOriginal="Comando --OPCOES"
+
+Note que basicamente é como se você estivesse declarando uma váriavel,
+porém o alias está na frente!
+Vamos fazer nosso primeiro teste com o comando ls, vamos por ele para trabalhar
+usando a opção --color como vimos lááá em cima.
+
+$ alias ls="ls --color"
+
+Uma nota importante é que o alias é salvo somente no processo/shell atual!
+A partir da hora que você fecha este processo o mesmo se perderá nas entranhas
+do Linux. É ai que entra o próximo tópico silverão!
+
+
+1.2 Deixando nosso alias salvo
+------------------------------
+
+Para deixar nosso alias salvo temos várias maneiras, mas eu gosto sempre de
+deixar cada um no seu quadrado, ou seja nada de global! Afinal se minha filha
+por exemplo querer usar um alias chamado tio_patinhas eu terei que usar tbm?
+Não! por isso use local!
+Para isto é só fazer a mesma chamada que você vez em linha no arquivo .bashrc
+que está localizado no seu home! Importante lembrar, se não existir este arq-
+uivo, você pode criar. Note que esse HOWTO é de bash, mas dá para se adaptar
+a outro shell 'No problems teacher'.
+Abra seu editor favorito e adicione a linha lá dentro, após feito isto finalize
+o processo atual do bash e retorne e execute o comando.
+
+$ nano $HOME/.bashrc
+
+Vou dar uma incrementada e por um comentário antes de jogar o alias!
+Só para dar um detalhezinho a mais.
+
+# Agora ls é colorido, frufru.
+alias ls="ls --color"
+
+Salve e feche, não esqueça de reiniciar seu Processo Bash atual!
+
+------------------------------------------------------------------------------
