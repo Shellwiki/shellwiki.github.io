@@ -1,0 +1,134 @@
+---------------------------------------------------------------------
+#_ SHELLWIKI         |          A Wiki em Plain Text
+---------------------------------------------------------------------
+
+Autor:     Guilherme Machado
+Email:     machadofguilherme@gmail.com
+Categoria: Bash
+Versão:    0.2
+Criado em: 05/07/2018
+
+---------------------------------------------------------------------
+
+indice () {
+    
+    1.1 O que é o Bash?
+    1.2 Shell Script
+    1.3 Conhecendo o Bash
+    1.4 Aplicando Comandos
+    
+}
+
+---------------------------------------------------------------------
+
+
+Bourne Again SHell (Bash)
+
+
+Esse artigo pretende explicar de forma didática e completa o que é o 
+bash, como ele funciona, suas características e de que forma o mesmo 
+pode ser utilizado.
+
+
+1.1. O que é o Bash?
+---------------------
+
+
+Bash é um acrônimo para Bourne Again SHell. É um projeto de autoria da
+Free Software Foundation (FSF). O mesmo é duradouro e ainda se mantém a-
+tivo até os dias atuais. 
+Foi criado para ser um interpretador de comandos e essa é a sua função 
+principal nos dias de hoje. Basicamente, para se entender dá melhor maneira
+possível e com clareza, é como se fosse uma ponte que liga você, usuário
+diretamente com o seu computador.
+Como assim?
+Muito simples. Sua função como usuário é emitir instruções. Você ordena. Há
+portanto a possibilidade de você ordenar algo errado, obviamente nesse caso
+a consequência não será o esperado. Um exemplo:
+
+Você quer saber que dia é hoje. Para isso você deve ordenar para o compu-
+tador para que o mesmo emita essa informação para você.
+
+O Bash funciona dessa maneira. Ele interpreta suas "ordens" de uma forma quer
+o seu computador consiga entender. E ele traduz o que o seu computador diz
+de uma maneira que você usuário também possa entender. Por isso ele é um 
+interpretador. E a maneira como ele faz isso, é exatamente como o já mencionado,
+os comandos.
+
+Você usuário ordena, comanda. E para isso existem diversos comandos disponíveis
+para se trabalhar com o Bash. Esses comandos podem ser aplicados em separado ou
+senão em uma sequência dentro de um arquivo script. 
+
+1.2 Shell Script
+-----------------
+
+Shell Script é um arquivo. Ou vários arquivos. Ele/eles pode/podem ser/serem
+abertos com um simples editor de texto. Normalmente, por qualquer um. Pode ser
+visualizado sem problemas e mais importante ainda, o mesmo pode ser editado e
+dessa forma alterado conforme sua vontade ou nescessidade.
+
+Mas o que esse arquivo faz? Nesse arquivo contém instruções. As ordens que você
+usuário quer que o computador execute.
+
+Shell Script também é uma linguagem de programação. Os arquivos além de serem 
+lidos ou escritos, eles podem ser executados.
+
+1.3 Conhecendo o Bash
+---------------------
+
+Para trabalhar com o Bash, primeiramente, procure por um programa chamado "Ter-
+minal". Abra o mesmo. Você provavelmente verá algo como...
+
+[user@host: ~] $
+
+O 'user' é o seu usuário. O 'host' é o nome que você deu a máquina quando insta-
+lou o sistema. O til significa o diretório que você está e o cifrão, o tipo de 
+usuário. Por exemplo:
+
+[colorado@archlinux: ~] $
+
+O diretório pode ser variado. Poderia ser Documentos, por exemplo. Já o tipo de 
+usuário também pode mudar. Existem dois tipos, o comum e o administrador (root).
+O que muda basicamente é o quanto de poder cada um detém. O usuário comum pode 
+realizar tarefas rotineiras e mais simples, enquanto que é incapaz de efetuar
+mudanças mais profundas no sistema operacional. O usuário root pode tudo. O 
+cara é o manda-chuva, é o Mestre das paradas e dos paraunês, ele chega chegando
+e ninguém pode com ele por que ele simplesmente é o poderoso e o chefe da facção.
+
+Lembre-se disso:
+
+$ - Usuário comum.
+# - Usuário administrador.
+
+1.4 Aplicando Comandos
+----------------------
+
+Primeiro verifique o tipo de usuário vigente. Olhe se aparece "$" ou "#". Após isso,
+apenas digite o comando desejado. Digite e tecle Enter. O comando rapidamente deverá
+ser executado e o shell emitirá a sua resposta. A resposta do computador para você.
+Um exemplo simples:
+
+Ao emitir o comando "ls" em um diretório qualquer:
+
+$ ls
+
+O resultado poderá ser este:
+
+$ ls
+1.png  'dd description.png'   distrodown    'Funções Removidas'   ideia2.png  
+2.png   dd.png               'Distro Down'  'HTML - Edward'       ideia.png    
+
+O comando ls é o "list". Ele serve para listar arquivos ou pastas dentro de um dire-
+tório.
+Assim como há o ls, existem muitos outros comandos para a sua felicidade (ou tristeza).
+
+Para sanar dúvidas sobre o Bash, sempre consulte a qualquer hora que precisar o manual
+do mesmo. Emita:
+
+$ man bash
+
+E divirta-se!
+
+$_ Wikipédia - https://pt.wikipedia.org/wiki/Bash
+
+---------------------------------------------------------------------
