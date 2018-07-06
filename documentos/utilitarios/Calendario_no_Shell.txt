@@ -4,7 +4,7 @@
 
 Autor:     Guilherme Machado
 Email:     machadofguilherme@gmail.com
-Categoria: Bash
+Categoria: Utilitários
 Versão:    0.2
 Criado em: 06/07/2018
 
@@ -20,7 +20,7 @@ indice () {
 
 ---------------------------------------------------------------------
 
-Calendário no Bash
+Calendário no Shell
 
 Esse HOWTO explica como verificar o calendário no interpretador de co-
 mandos Bash. 
