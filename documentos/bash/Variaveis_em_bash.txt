@@ -40,7 +40,7 @@ string/texto, números, status de saída de um comando e retorno da saída.
 
 Em qualquer momento! variáveis são legais de se trabalhar, vamos supor como
 exemplo eu precisasse fazer a chamada de um diretório específico 4 vezes!
-Seria viável eu ficar digintando sempre esse diretório manual? não seria falho
+Seria viável eu ficar digitando sempre esse diretório manual? não seria falho
 se em um futuro eu resolvesse alterar o diretório em si? E se eu esquecer de
 alterar algum caminho é falha na certa! Para isto eu uso uma variável para
 me ajudar!
