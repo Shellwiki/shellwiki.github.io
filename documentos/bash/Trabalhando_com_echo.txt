@@ -1,0 +1,107 @@
+---------------------------------------------------------------------
+#_ SHELLWIKI         |          A Wiki em Plain Text
+---------------------------------------------------------------------
+
+Autor:     Guilherme Machado
+Email:     machadofguilherme@gmail.com
+Categoria: Bash
+Versão:    0.2
+Criado em: (ex: 07/07/2018
+
+---------------------------------------------------------------------
+
+indice () {
+    
+    1.1 Comando Echo.
+    1.2 Echo e Variáveis.
+    1.3 Echo com Efeitos
+    
+}
+
+---------------------------------------------------------------------
+
+Trabalhando com Echo
+
+O comando echo e algumas formas de se aplicar o mesmo, de uma forma
+completa e abrangente.
+
+
+1.1. Comando Echo.
+------------------
+
+O comando echo é um comando que lhe permite imprimir dados na tela.
+Mas... Como assim, Guilherme?
+Simples, simples.
+Experimente abrir o seu Terminal. Abriu? Então beleza.
+Agora digite:
+
+$ echo "Eu sou o máximo."
+
+Isso deve bastar para ser exibido logo em seguida, a frase digitada.
+A saída deve ser algo assim....
+
+Eu sou o máximo.
+
+1.2 Echo e Variáveis.
+---------------------
+
+O comando echo pode ser utilizado também para imprimir na tela, o va-
+lor de uma variável. Por exemplo, para saber qual o shell utilizado no
+momento, podemos "ler" a variável SHELL.
+
+$ echo "$SHELL"
+
+A resposta deve ser o shell utilizado, que pode ser o Bash, o ZSH, o 
+KSH ou qualquer outro.
+
+É possível também, imprimir na tela o valor de saída, que pode ser:
+
+0 : Sem erros.
+1 : Com algum erro.
+
+Existem outros valores, como o 127 que acho que significa comando não
+encontrado.
+
+Para isso, execute e veja qual número é exibido como resposta:
+
+$ echo $?
+
+Faça isso após a execução de algum comando, por exemplo, um simples 
+"ls".
+
+Há a possibilidade é claro, de imprimir o valor de uma variável após
+a sua declaração. Um exemplo simples disso seria:
+
+cor="vermelho"
+echo "$cor"
+
+Essa sequência em um arquivo Shell Script mostrará para você o que há
+dentro da variável cor. No caso acima, o que há dentro dessa variável
+é a string 'vermelho'. A propósito, em Shell Script tudo são strings.
+
+1.3 Echo com Efeitos.
+---------------------
+
+O echo é um comando que pode ser usado com várias opções. Veja bem.
+Adicione um '-e' e uma pequena frase. Adicionou?
+
+$ echo -e "Eu sou o máximo."
+
+Agora, para causar uma sensação melhor, aplique o seguinte efeito.
+
+$ echo -e "\nEu sou o máximo.\n"
+
+O \n é o mesmo que 'newline'. Isso significa 'novalinha', ou seja...
+Quebra a linha, não com um soco evidente, não seja violento.
+
+Com essa possibilitade é possível aplicar outros efeitos, por exem-
+plo, o mesmo que acontece ao teclar a tecla Tab. Troque o \n por \t.
+
+$ echo "\tEu sou o máximo.\n"
+
+	Eu sou o máximo.
+
+Tem outras possiblidades de formatação, como adicionar cores por e-
+xemplo, mas isso pode ficar para um outro howto. Até mais! =D
+
+---------------------------------------------------------------------
